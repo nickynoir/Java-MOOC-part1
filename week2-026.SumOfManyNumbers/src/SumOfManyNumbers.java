@@ -15,6 +15,8 @@ public class SumOfManyNumbers {
             }
 
             // do something here
+            //System.out.println("Sum now: ");
+            sum += read;
 
             System.out.println("Sum now: " + sum);
         }
