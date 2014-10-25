@@ -5,7 +5,7 @@ public class Printing {
         // you can print one star with the command
         // System.out.print("*");
         // call this command amount times
-        int i = 0;
+        int i = 1;
         while (i <= amount) {
             System.out.print("*");
             i++;
@@ -34,7 +34,7 @@ public class Printing {
 
     public static void printTriangle(int size) {
         // 39.4
-        int tri = 0;
+        int tri = 1;
         while (tri <= size) {
             
             printStars(tri);
