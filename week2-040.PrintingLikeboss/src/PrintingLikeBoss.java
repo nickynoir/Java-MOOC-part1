@@ -34,38 +34,40 @@ public class PrintingLikeBoss {
 
     public static void xmasTree(int height) {
         // 40.3
-        int tree = 0;
-        int length = 0;
-        int space = height;
-        while (length <= height && height > 3) {
+        int tree = 1;
+        //int length = 0;
+        int space = height - 1;
+        
+        while (space >= 0) {
+            
             printWhitespaces(space);
             printStars(tree);
-            length++;
+            
+            //length++;
             tree+=2;
-            space--;    
-        }
-        int stand = 2;
-        int i = 0;
-        int b = height-=1;
-        while (i < stand) {
-            printWhitespaces(b);
-            printStars(2);
-            i++;
+            space--;  
             
         }
+        
+        
+        space = height - 2;
+        tree = 3;
+        
+        printWhitespaces(space);
+        printStars(tree);
+        printWhitespaces(space);
+        printStars(tree);
+       
     }
 
     public static void main(String[] args) {
         // Tests do not use main, yo can write code here freely!
         //printWhitespaces(4);
        // System.out.println("..");
-        printTriangle(4);
-        System.out.println("---");
-        printTriangle(2);
-        System.out.println("---");
-        printTriangle(10);
-        System.out.println("---");
-       // xmasTree(10);
+        //printTriangle(4);
+        //System.out.println("---");
+        
+       xmasTree(10);
        // System.out.println("---");
         //xmasTree(10);
     }
